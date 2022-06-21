@@ -141,9 +141,13 @@ input:required:focus ~ .error {
 }
 
 @media only screen and (max-width: 375px) {
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
   main {
     min-height: 100vh;
-    width: 80%;
+    width: 100%;
     margin: 2rem auto;
     flex-direction: column;
     text-align: center;
@@ -155,12 +159,23 @@ input:required:focus ~ .error {
 
   .left-text {
     margin: 4rem 0;
+    text-align: center;
   }
 
   .left-text h1 {
     margin: 2rem 0;
+    text-align: center;
+  }
+
+  .left-text p {
+    width: 75%;
+    font-size: 14px;
+    font-weight: 100;
+    margin: auto;
+    line-height: 1.8;
   }
   .form {
     margin-bottom: 5rem 0;
+    width: 100%;
   }
 }
